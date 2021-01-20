@@ -5,62 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Top Movies</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script type="text/javascript" src="Data2/film.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script  type="text/javascript"  src="data 3/film.js"></script>
+    <script  type="text/javascript" src="js/script.js"></script>
   </head>
   <body>
-    <!-----Site Title----->
+    <!----Site Title----->
     <h1>Choose your movies</h1>
-    <!-----My top 2----->
+    <!----My top 2----->
 
-  
-    <div id="selection"class="center">
+    <div id="selection" class="center">
       <h3>My top 2</h3>
-      <div id="selection1" >
-
+      <div id="selection1">
         <div class="film">
           <img src="images/Intouchables.jpg" alt="Intouchables"/>
           <h3>title test</h3>
-      </div>
-
-
-
+        </div>
         <span>1</span>
       </div>
 
       <div id="selection2">
         <span>2</span>
-      </div> 
+     </div>
     </div>
+  
+    
     <!-----Catalogue----->
-<div id="catalogue"class="center">
+<div id="catalogue" class="center">
     <input type="text" placeholder="Filter movies" id="filter">
                          Show Details
     <input type="checkbox" id="ShowDetails" checked="checked">
 
 
  <div id="films">
-    <div class="film">
-        <img src="images/Intouchables.jpg" alt="Intouchables"/>
-        <h3>title test</h3>
-    </div>
-</div>
-
-          <div id="details">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-        nisi ut aliquip ex ea commodo consequat ALIOU.
-          </div>
-      </div>
-    </div>
+   <div id="displayFilms"></div>
+  <div class="film">
+    <img src="images/Intouchables.jpg" alt="Intouchables"/>
+    <h3>title test</h3>
   </div>
-</div>
+    </div>
+    
+          <div id="details">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit,ed do eiusmod tempor incididunt.ed do eiusmod tempor incididunt
+          sed do eiusmod tempor incididunt,ed do eiusmod tempor incididunted do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua.</p>
+        
+          </div>
+      
+  </div>
+
 
 <script>
+let div=document.getElementById("selection");
 
-console.log(filmData)
-</script>
-<script src="film.js"></script>
+let classes =document.getElementsByClassName("center");
+
+let links =document.getElementsByTagName("a");
+
+let par =document.getElementsByTagName("p");
+
+let selected =document.querySelector("#selection");
+
+let details =document.querySelector("#details p");
+
+details.setAttribute("align", "center");//* or 
+
+details.align="center";
+
+details.setAttribute( "style","background-color:red;");
+
+
+
+
+
+
+
+
+console.log(div);
+console.log(filmData);
+console.log(classes);
+console.log(links);
+console.log(par);
+console.log(selected);
+
+
+
+
+
+</script> 
+
+
+
 </body>
+
+
 </html>

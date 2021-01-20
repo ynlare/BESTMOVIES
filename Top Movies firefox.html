@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Movies</title>
+    <link rel="stylesheet" href="Top%20Movies%20firefox_files/style.css">
+    <script type="text/javascript" src="Top%20Movies%20firefox_files/film.js"></script>
+    <script type="text/javascript" src="Top%20Movies%20firefox_files/script.js"></script>
+  </head>
+  <body>
+    <!----Site Title----->
+    <h1>Choose your movies</h1>
+    <!----My top 2----->
+
+  
+    <div id="selection" class="center">
+      <h3>My top 2</h3>
+      <div id="selection1">
+        <div class="film">
+          <img src="Top%20Movies%20firefox_files/Intouchables.jpg" alt="Intouchables">
+          <h3>title test</h3>
+        </div>
+        <span>1</span>
+      </div>
+
+      <div id="selection2">
+        <span>2</span>
+     </div>
+    </div>
+  
+    
+    <!-----Catalogue----->
+<div id="catalogue" class="center">
+    <input type="text" placeholder="Filter movies" id="filter">
+                         Show Details
+    <input type="checkbox" id="ShowDetails" checked="checked">
+
+
+ <div id="films">
+  <div class="film">
+    <img src="Top%20Movies%20firefox_files/Intouchables.jpg" alt="Intouchables">
+    <h3>title test</h3>
+  </div>
+    </div>
+    
+          <div id="details">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor dunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+        nisi ut aliquip ex ea commodo consequat ALIOU GROS brench ok.
+          </div>
+      
+  </div>
+
+<script src="Top%20Movies%20firefox_files/script.js"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
